@@ -1,13 +1,14 @@
 {
   "name": "contentraker-back-end",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Back-end for contentraker",
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
     "start": "tsc && node dist/index.js",
     "lint": "eslint . --ext .ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
